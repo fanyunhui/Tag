@@ -18,9 +18,7 @@ public class TestService extends Service {
 
     public class MyBind extends Binder{
         public void callTest(String str){
-
-
-
+            //test tags
             test(str);
         }
     }
