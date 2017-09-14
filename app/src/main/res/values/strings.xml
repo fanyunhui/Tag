@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="openNotifi">弹出通知框</string>
+    <string name="timeFenfa">时间分发</string>
+    <string name="cancle">取消弹出框</string>
+    <string name="sendBroadCast">发送一条广播</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="startService">开启服务</string>
+    <string name="stopService">停止服务</string>
+    <string name="serviceFunction">调用服务中的方法</string>
+</resources>
