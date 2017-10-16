@@ -13,16 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".TestActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".MainActivity2"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+
+            />
+        </activity>
 
         <receiver
             android:name=".MyReceiver"
@@ -43,8 +51,9 @@
         <!-- </intent-filter> -->
         <!-- </receiver> -->
 
-        <service
-            android:name=".TestService"/>
+        <service android:name=".TestService" />
+
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>

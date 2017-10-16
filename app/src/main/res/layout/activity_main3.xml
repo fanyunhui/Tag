@@ -7,8 +7,9 @@
     android:orientation="vertical"
     >
 
-    <TextView
+    <ListView
+        android:id="@+id/lv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asgagag"/>
+       />
 </LinearLayout>

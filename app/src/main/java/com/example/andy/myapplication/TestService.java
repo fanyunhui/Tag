@@ -2,6 +2,7 @@ package com.example.andy.myapplication;
 
 import android.app.Service;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Binder;
 import android.os.IBinder;
 import android.support.annotation.IntDef;
@@ -14,6 +15,11 @@ public class TestService extends Service {
     public IBinder onBind(Intent intent) {
         Toast.makeText(getApplicationContext(),"绑定服务",Toast.LENGTH_SHORT).show();
         return new MyBind();
+    }
+
+    @Override
+    public void unbindService(ServiceConnection conn) {
+        super.unbindService(conn);
     }
 
     public class MyBind extends Binder{
